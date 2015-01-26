@@ -5,28 +5,29 @@ try:
 except ImportError:
     print("Flask-Babel is required.")
 
+class Phrase(object):
+
+    def __init__(self, app=None):
+        self.app = app
+        app.jinja_env.install_gettext_callables(
+            gettext,
+            ngettext,
+            newstyle=True
+        )
+
 def phrase_enabled():
     return current_app.config['PHRASE_ENABLED']
-
-def phrase_jinja(): 
-    current_app.jinja_env.install_gettext_callables(
-        gettext,
-        ngettext,
-        newstyle=True
-    )
-
+    
 def phrase_key(msgid):
     return current_app.config['PHRASE_PREFIX'] + 'phrase_' + msgid + current_app.config['PHRASE_SUFFIX']
 
 def gettext(msgid):
-    phrase_jinja()
     if phrase_enabled():
         return phrase_key(msgid)
     else:
         return gettext_original(msgid)
 
 def ngettext(msgid):
-    phrase_jinja()
     if phrase_enabled():
         return phrase_key(msgid)
     else:

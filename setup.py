@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Phrase',
-    version='0.0.1',
+    version='0.1.0',
     url='http://github.com/phrase/Flask-Phrase',
     license='BSD',
     author='Kevin Kennell',
