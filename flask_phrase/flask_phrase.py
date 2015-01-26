@@ -12,7 +12,7 @@ def phrase_jinja():
     current_app.jinja_env.install_gettext_callables(
         gettext,
         ngettext,
-        ewstyle=True
+        newstyle=True
     )
 
 def phrase_key(msgid):
