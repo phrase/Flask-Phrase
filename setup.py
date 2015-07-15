@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Phrase',
-    version='0.1.0',
+    version='1.0.0',
     url='http://github.com/phrase/Flask-Phrase',
     license='BSD',
     author='Kevin Kennell',
@@ -24,7 +24,6 @@ setup(
         'Flask-Babel'
     ],
     classifiers=[
-        'Development Status :: 1 - Planning',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',

@@ -16,10 +16,10 @@ class Phrase(object):
         )
 
 def phrase_enabled():
-    return current_app.config['PHRASE_ENABLED']
-    
+    return current_app.config['PHRASEAPP_ENABLED']
+
 def phrase_key(msgid):
-    return current_app.config['PHRASE_PREFIX'] + 'phrase_' + msgid + current_app.config['PHRASE_SUFFIX']
+    return current_app.config['PHRASEAPP_PREFIX'] + 'phrase_' + msgid + current_app.config['PHRASEAPP_SUFFIX']
 
 def gettext(msgid):
     if phrase_enabled():

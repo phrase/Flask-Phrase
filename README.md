@@ -17,9 +17,9 @@ Install the package with pip:
 
 Add the following to your Flask app configuration (app.config or config.py file)
 
-    PHRASE_ENABLED = True
-    PHRASE_PREFIX = '{{__'
-    PHRASE_SUFFIX = '__}}'
+    PHRASEAPP_ENABLED = True
+    PHRASEAPP_PREFIX = '{{__'
+    PHRASEAPP_SUFFIX = '__}}'
 
 Your app code should look something like this:
 
@@ -33,21 +33,24 @@ Your app code should look something like this:
 Last step: add the PhraseApp JavaScript snippet to your base layout file with the folling tag. This should go inside the <head> section of your template file:
 
     <script>
-      var phrase_auth_token = 'YOUR_PHRASEAPP_TOKEN';
-      (function() {
+    window.PHRASEAPP_CONFIG = {
+        projectId: "YOUR-PROJECT-ID"
+    };
+    (function() {
         var phraseapp = document.createElement('script'); phraseapp.type = 'text/javascript'; phraseapp.async = true;
-        phraseapp.src = ['https://', 'phraseapp.com/assets/phrase/0.1/app.js?', new Date().getTime()].join('');
+        phraseapp.src = ['https://', 'phraseapp.com/assets/in-context-editor/2.0/app.js?', new Date().getTime()].join('');
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(phraseapp, s);
-      })();
+    })();
     </script>
+
+You can find your Project-ID in the PhraseApp Translation Center.
 
 ## Usage
 
-Set the PHRASE_ENABLED to True/False to enable or disable In-Context-Editing. When set to False, it will fall back to standard Flask-Babel's gettext functions. Disable PhraseApp for production environments at any time!
+Set the PHRASEAPP_ENABLED to True/False to enable or disable In-Context-Editing. When set to False, it will fall back to standard Flask-Babel's gettext functions. Disable PhraseApp for production environments at any time!
 
 ## Resources
 * [Step-by-Step Guide on Flask-Babel and Flask-Phrase](http://localize-software.phraseapp.com/posts/python-localization-for-flask-applications/)
 * [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application).
 * [Localization Guides and Software Translation Best Practices](http://localize-software.phraseapp.com/)
 * [Contact PhraseApp Team](https://phraseapp.com/en/contact)
-
