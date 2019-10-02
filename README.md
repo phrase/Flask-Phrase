@@ -1,6 +1,6 @@
 # Flask-Phrase
 
-This adapter lets you connect your [Flask](http://flask.pocoo.org/) application to [Phrase](https://phrase.com) and integrate the powerful [In-Context-Editor](http://demo.phrase.com/) into your apps.
+This adapter lets you connect your [Flask](http://flask.pocoo.org/) application to [Phrase](https://phrase.com) and integrate the powerful [In-Context-Editor](http://demo.phraseapp.com/) into your apps.
 
 ## How does it work?
 
@@ -50,7 +50,7 @@ You can find your Project-ID in the Phrase Translation Center.
 Set the PHRASEAPP_ENABLED to True/False to enable or disable In-Context-Editing. When set to False, it will fall back to standard Flask-Babel's gettext functions. Disable Phrase for production environments at any time!
 
 ## Resources
-* [Step-by-Step Guide on Flask-Babel and Flask-Phrase](http://localize-software.phrase.com/posts/python-localization-for-flask-applications/)
-* [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application).
-* [Localization Guides and Software Translation Best Practices](http://localize-software.phrase.com/)
+* [Step-by-Step Guide on Flask-Babel and Flask-Phrase](https://phrase.com/blog/posts/python-localization-for-flask-applications/)
+* [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application/).
+* [Localization Guides and Software Translation Best Practices](http://phrase.com/blog/)
 * [Contact Phrase Team](https://phrase.com/en/contact)
