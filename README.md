@@ -1,12 +1,12 @@
 # Flask-Phrase
 
-This adapter lets you connect your [Flask](http://flask.pocoo.org/) application to [PhraseApp](https://phraseapp.com) and integrate the powerful [In-Context-Editor](http://demo.phraseapp.com/) into your apps.
+This adapter lets you connect your [Flask](http://flask.pocoo.org/) application to [Phrase](https://phrase.com) and integrate the powerful [In-Context-Editor](http://demo.phraseapp.com/) into your apps.
 
 ## How does it work?
 
-Flask-Phrase provides In-Context translating facilities to your Flask app by hooking into [Flask-Babel's](https://pythonhosted.org/Flask-Babel/) gettext function. It exposes the underlying key names to the JavaScript editor that is provided by PhraseApp.
+Flask-Phrase provides In-Context translating facilities to your Flask app by hooking into [Flask-Babel's](https://pythonhosted.org/Flask-Babel/) gettext function. It exposes the underlying key names to the JavaScript editor that is provided by Phrase.
 
-To get started with PhraseApp you need to [sign up for a free account](https://phraseapp.com/signup).
+To get started with Phrase you need to [sign up for a free account](https://phrase.com/signup).
 
 ## Install and Setup
 
@@ -30,7 +30,7 @@ Your app code should look something like this:
     babel = Babel(app)
     phrase = Phrase(app)
 
-Last step: add the PhraseApp JavaScript snippet to your base layout file with the folling tag. This should go inside the <head> section of your template file:
+Last step: add the Phrase JavaScript snippet to your base layout file with the folling tag. This should go inside the <head> section of your template file:
 
     <script>
     window.PHRASEAPP_CONFIG = {
@@ -43,14 +43,14 @@ Last step: add the PhraseApp JavaScript snippet to your base layout file with th
     })();
     </script>
 
-You can find your Project-ID in the PhraseApp Translation Center.
+You can find your Project-ID in the Phrase Translation Center.
 
 ## Usage
 
-Set the PHRASEAPP_ENABLED to True/False to enable or disable In-Context-Editing. When set to False, it will fall back to standard Flask-Babel's gettext functions. Disable PhraseApp for production environments at any time!
+Set the PHRASEAPP_ENABLED to True/False to enable or disable In-Context-Editing. When set to False, it will fall back to standard Flask-Babel's gettext functions. Disable Phrase for production environments at any time!
 
 ## Resources
-* [Step-by-Step Guide on Flask-Babel and Flask-Phrase](http://localize-software.phraseapp.com/posts/python-localization-for-flask-applications/)
-* [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application).
-* [Localization Guides and Software Translation Best Practices](http://localize-software.phraseapp.com/)
-* [Contact PhraseApp Team](https://phraseapp.com/en/contact)
+* [Step-by-Step Guide on Flask-Babel and Flask-Phrase](https://phrase.com/blog/posts/python-localization-for-flask-applications/)
+* [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application/).
+* [Localization Guides and Software Translation Best Practices](http://phrase.com/blog/)
+* [Contact Phrase Team](https://phrase.com/en/contact)

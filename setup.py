@@ -2,7 +2,7 @@
 Flask-Phrase
 ------------
 
-Connect your Flask apps to PhraseApp, the powerful in-context-translation solution.
+Connect your Flask apps to Phrase, the powerful in-context-translation solution.
 
 """
 
@@ -15,7 +15,7 @@ setup(
     license='MIT',
     author='Dynport GmbH',
     author_email='kevin.kennell@dynport.de',
-    description='Connect your Flask apps to PhraseApp, the powerful in-context-translation solution.',
+    description='Connect your Flask apps to Phrase, the powerful in-context-translation solution.',
     packages=['flask_phrase'],
     zip_safe=False,
     include_package_data=True,
