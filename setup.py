@@ -14,7 +14,7 @@ setup(
     url='http://github.com/phrase/Flask-Phrase',
     license='MIT',
     author='Dynport GmbH',
-    author_email='kevin.kennell@dynport.de',
+    author_email='tobias.schwab@phrase.com',
     description='Connect your Flask apps to Phrase, the powerful in-context-translation solution.',
     packages=['flask_phrase'],
     zip_safe=False,
