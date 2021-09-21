@@ -54,3 +54,7 @@ Set the PHRASEAPP_ENABLED to True/False to enable or disable In-Context-Editing.
 * [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application/).
 * [Localization Guides and Software Translation Best Practices](http://phrase.com/blog/)
 * [Contact Phrase Team](https://phrase.com/en/contact)
+
+## Get help / support
+
+Please contact [support@phrase.com](mailto:support@phrase.com?subject=[GitHub]%20) and we can take more direct action toward finding a solution.
