@@ -24,7 +24,7 @@ Add the following to your Flask app configuration (app.config or config.py file)
 Your app code should look something like this:
 
     from flask import Flask, [...]
-    from flask.ext.babel import Babel
+    from flask_babel import Babel
     from flask_phrase import Phrase, gettext, ngettext
     app = Flask(__name__)
     babel = Babel(app)
