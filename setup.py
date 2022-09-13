@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Phrase',
-    version='1.0.0',
+    version='1.1.0',
     url='http://github.com/phrase/Flask-Phrase',
     license='MIT',
     author='Dynport GmbH',
