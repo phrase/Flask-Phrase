@@ -45,6 +45,28 @@ Last step: add the Phrase JavaScript snippet to your base layout file with the f
 
 You can find your Project-ID in the Phrase Translation Center.
 
+
+## Using the US Datacenter with ICE
+
+In addition to `projectId` in the config, also add the US specific URLs to enable working through the US endpoint.
+```
+    baseUrl: "https://us.app.phrase.com",
+    apiBaseUrl: 'https://api.us.app.phrase.com/api/v2',
+    oauthEndpointUrl: "https://api.us.app.phrase.com/api/v2/authorizations",
+    profileUrl: "https://us.app.phrase.com/settings/profile",
+```
+
+e.g
+```
+window.PHRASEAPP_CONFIG = {
+    projectId: "YOUR-PROJECT-ID",
+    baseUrl: "https://us.app.phrase.com",
+    apiBaseUrl: 'https://api.us.app.phrase.com/api/v2',
+    oauthEndpointUrl: "https://api.us.app.phrase.com/api/v2/authorizations",
+    profileUrl: "https://us.app.phrase.com/settings/profile",
+};
+```
+
 ## Usage
 
 Set the PHRASEAPP_ENABLED to True/False to enable or disable In-Context-Editing. When set to False, it will fall back to standard Flask-Babel's gettext functions. Disable Phrase for production environments at any time!

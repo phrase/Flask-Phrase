@@ -1,9 +1,6 @@
 from __future__ import print_function
-try:
-    from flask.ext.babel import gettext as gettext_original, ngettext as ngettext_original
-    from flask import current_app
-except ImportError:
-    print("Flask-Babel is required.")
+from flask_babel import gettext as gettext_original, ngettext as ngettext_original
+from flask import current_app
 
 class Phrase(object):
 
