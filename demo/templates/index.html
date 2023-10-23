@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <script>
+        window.PHRASEAPP_CONFIG = {
+            phraseEnabled: true,
+            accountId: "0bed59e5",
+            projectId: "00000000000000004158e0858d2fa45c",
+            datacenter: "eu",
+        };
+        (function () {
+            var phrasejs = document.createElement('script');
+            phrasejs.type = 'module';
+            phrasejs.async = true;
+            phrasejs.src = 'https://d2bgdldl6xit7z.cloudfront.net/latest/ice/index.js';
+            if (window.PHRASEAPP_CONFIG.phraseEnabled) { // Toggle ICE overlay based on `phraseEnabled`
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(phrasejs, s);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <h2>This is a simple demo of the Flask integration for the In-Context Editor</h2>
+    <b>Find me in demo/templates/index.html</b>
+    <p>{{ hero_title }}</p>
+    <p>{{ advantages_text }}</p>
+    <p>{{ integrate_title }}</p>
+    <p>{{ create_this_key }}</p>
+    <p>{{ integrate_text }}</p>
+    <p>{{ variable_key }}</p>
+    <p>{{ ngettext_variable_key }}</p>
+    <p>{{ success_message }}</p>
+</body>
+
+</html>
