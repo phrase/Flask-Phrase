@@ -1,5 +1,4 @@
-from __future__ import print_function
-from flask_babel import gettext as gettext_original, ngettext as ngettext_original
+from flask_babel import gettext as gettext_original, ngettext as ngettext_original, lazy_gettext as lazy_gettext_original
 from flask import current_app
 
 class Phrase(object):
@@ -18,14 +17,20 @@ def phrase_enabled():
 def phrase_key(msgid):
     return current_app.config['PHRASEAPP_PREFIX'] + 'phrase_' + msgid + current_app.config['PHRASEAPP_SUFFIX']
 
-def gettext(msgid):
+def gettext(msgid, *args, **kwargs):
     if phrase_enabled():
         return phrase_key(msgid)
     else:
-        return gettext_original(msgid)
+        return gettext_original(msgid, *args, **kwargs)
 
-def ngettext(msgid):
+def lazy_gettext(msgid, *args, **kwargs):
     if phrase_enabled():
         return phrase_key(msgid)
     else:
-        return ngettext_original(msgid)
+        return lazy_gettext_original(msgid, *args, **kwargs)
+
+def ngettext(msgid, *args, **kwargs):
+    if phrase_enabled():
+        return phrase_key(msgid)
+    else:
+        return ngettext_original(msgid, *args, **kwargs)
