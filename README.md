@@ -17,6 +17,8 @@ You can find a demo project in the `demo` folder, just run follow the `README.md
 
 ### Installation
 
+#### NOTE: You can not use the old version of the ICE with integration versions of >2.0.0, you have to instead use 1.x.x versions as before
+
 #### via pip
 
 ```bash
@@ -58,6 +60,8 @@ Last step: add the Phrase JavaScript snippet to your base layout file with the f
     </script>
 
 You can find your Project-ID and Account-ID in the Phrase Translation Center.
+
+Old version of the ICE is not available since version 2.0.0. If you still would rather use the old version, please go back to 1.x.x versions.
 
 #### Using the US Datacenter with ICE
 
