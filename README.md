@@ -101,7 +101,7 @@ Example: `chore: Update README`
 
 Please use [GitHub issues](https://github.com/phrase/Flask-Phrase/issues) to share your problem, and we will do our best to answer any questions or to support you in finding a solution.
 
-## resources
+## :books: Resources
 
 - [Step-by-Step Guide on Flask-Babel and Flask-Phrase](https://phrase.com/blog/posts/python-localization-for-flask-applications/)
 - [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application/).
