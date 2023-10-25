@@ -12,19 +12,19 @@ description = "Connect your Flask apps to Phrase with the powerful in-context-tr
 readme = "README.md"
 requires-python = ">=3.6"
 classifiers = [
-        "Environment :: Web Environment",
-        "Framework :: Flask",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Software Development :: Internationalization",
-        "Topic :: Software Development :: Localization",
+  "Environment :: Web Environment",
+  "Framework :: Flask",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Internationalization",
+  "Topic :: Software Development :: Localization",
 ]
 dependencies = [
-    "flask",
-    'flask_babel',
+  "flask",
+  'flask_babel',
 ]
 
 [project.urls]
