@@ -1,3 +1,8 @@
 /lib
 /bin
+env
+dist
+build
 pyvenv.cfg
+*.egg-info/
+__pycache__

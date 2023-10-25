@@ -1,0 +1,54 @@
+# English translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-10-23 12:30+0200\n"
+"PO-Revision-Date: 2023-10-23 12:44+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: demo.py:14
+msgid "success_message"
+msgstr "The form was successfully saved."
+
+#: demo.py:15
+msgid "hero_title"
+msgstr "String 1"
+
+#: demo.py:16
+msgid "advantages_text"
+msgstr "String 2"
+
+#: demo.py:17
+msgid "integrate_title"
+msgstr "A simple string"
+
+#: demo.py:18
+msgid "create_this_key"
+msgstr "An other simple string"
+
+#: demo.py:19
+msgid "integrate_text"
+msgstr "A string"
+
+#: demo.py:21
+msgid "variable_key"
+msgstr "Value: %(value)s"
+
+#: demo.py:23
+msgid "ngettext_variable_key"
+msgid_plural "ngettext_variable_key_plural"
+msgstr[0] "%(num)s Apple"
+msgstr[1] "%(num)s Apples"
+
