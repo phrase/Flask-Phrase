@@ -49,6 +49,7 @@ Last step: add the Phrase JavaScript snippet to your base layout file with the f
             projectId: "YOUR-PROJECT-ID",
             accountId: "YOUR-ACCOUNT-ID",
             datacenter: "eu",
+            origin: "Flask-Phrase"
         };
         (function() {
             var phrasejs = document.createElement('script');
@@ -72,6 +73,7 @@ window.PHRASEAPP_CONFIG = {
     projectId: "YOUR-PROJECT-ID",
     accountId: "YOUR-ACCOUNT-ID",
     datacenter: "us",
+    origin: "Flask-Phrase"
 };
 ```
 
