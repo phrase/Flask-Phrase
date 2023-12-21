@@ -13,7 +13,7 @@ To use Flask-Phrase with your application you have to:
 
 ### Demo
 
-You can find a demo project in the `demo` folder, just run follow the `README.md` in that folder
+You can find a demo project in the `demo` folder, just [follow the `README.md` in that folder](https://github.com/phrase/Flask-Phrase/tree/master/demo).
 
 ### Installation
 
@@ -106,7 +106,6 @@ Please use [GitHub issues](https://github.com/phrase/Flask-Phrase/issues) to sha
 ## :books: Resources
 
 - [Step-by-Step Guide on Flask-Babel and Flask-Phrase](https://phrase.com/blog/posts/python-localization-for-flask-applications/)
-- [Flask-Phrase Demo Application](https://github.com/phrase/flask-demo-application/).
 - [Localization Guides and Software Translation Best Practices](http://phrase.com/blog/)
 - [Contact Phrase Team](https://phrase.com/en/contact)
 
