@@ -13,7 +13,7 @@ To use Flask-Phrase with your application you have to:
 
 ### Demo
 
-You can find a demo project in the `demo` folder, just run follow the `README.md` in that folder
+You can find a demo project in the `demo` folder, just [follow the `README.md` in that folder](https://github.com/phrase/Flask-Phrase/tree/master/demo).
 
 ### Installation
 
